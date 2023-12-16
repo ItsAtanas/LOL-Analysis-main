@@ -33,16 +33,14 @@ with open(csv_file_path, 'r') as file:
         firstRiftHerald_column_values.append(row[10])
 
 # Use the function from the percentage_calculator module
-#firstBlood_equal = calculate_percentage_equal(winner_column_values, firstBlood_column_values)
-#firstTower_equal = calculate_percentage_equal(winner_column_values, firstTower_column_values)
-#firstInhibitor_equal = calculate_percentage_equal(winner_column_values, firstInhibitor_column_values)
-#firstBaron_equal = calculate_percentage_equal(winner_column_values, firstBaron_column_values)
+firstBlood_equal = calculate_percentage_equal(winner_column_values, firstBlood_column_values)
+firstTower_equal = calculate_percentage_equal(winner_column_values, firstTower_column_values)
+firstInhibitor_equal = calculate_percentage_equal(winner_column_values, firstInhibitor_column_values)
+firstBaron_equal = calculate_percentage_equal(winner_column_values, firstBaron_column_values)
         
-firstBaron_equal = calculate_percentage_equal(winner_column_values, firstInhibitor_column_values, firstBlood_column_values)
-print(firstBaron_equal)
 
 
-#print(f"The team that gets the first kill of the game is: {firstBlood_equal:.2f}% more likely to win the game.")
-#print(f"The team that gets the first tower of the game is: {firstTower_equal:.2f}% more likely to win the game.")
-#print(f"The team that gets the first inhibitor of the game is: {firstInhibitor_equal:.2f}% more likely to win the game.")
-#print(f"The team that gets the first baron of the game is: {firstBaron_equal:.2f}% more likely to win the game.")
+print(f"The team that gets the first kill of the game is: {firstBlood_equal:.2f}% more likely to win the game.")
+print(f"The team that gets the first tower of the game is: {firstTower_equal:.2f}% more likely to win the game.")
+print(f"The team that gets the first inhibitor of the game is: {firstInhibitor_equal:.2f}% more likely to win the game.")
+print(f"The team that gets the first baron of the game is: {firstBaron_equal:.2f}% more likely to win the game.")
